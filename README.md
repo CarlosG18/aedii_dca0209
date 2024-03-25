@@ -9,7 +9,7 @@ Repositório dedicado a implementações e anotações sobre a disciplina de Alg
 ### 📖 Conteúdos
 
 ### 🎯 Atividades/projetos
-- [📌 U1T1 - Desafio: usando estrutura de dados em árvore com uma aplicação de Processamento de Linguagem Natural (PLN)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade1/U1T2/u1t1.md)
+- [📌 U1T1 - Desafio: usando estrutura de dados em árvore com uma aplicação de Processamento de Linguagem Natural (PLN)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade1/U1T1/u1t1.md)
 
 ## 🚀 Unidade II
 
