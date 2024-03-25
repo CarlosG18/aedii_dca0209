@@ -4,8 +4,9 @@ from nltk.tokenize import regexp_tokenize
 from nltk.corpus import stopwords
 nltk.download('punkt')
 nltk.download('stopwords')
+import requests
 
-def get_text_from_pdf(file_name):
+def get_text_from_pdf(conteudo):
   '''
     função que obtem o conteudo de um pdf.
 
@@ -17,10 +18,12 @@ def get_text_from_pdf(file_name):
   '''
 
   texto = ""
-  pdf = fitz.open(file_name)
-  for pagina in pdf:
-      texto += pagina.get_text()
-  pdf.close()
+  pdf = fitz.open(stream=conteudo, filetype="pdf")
+
+  for page_num in range(len(pdf)):
+    page = pdf[page_num]
+    text = page.get_text()
+    texto += text
   return texto
 
 def remove_letras_repetidas(palavra):
