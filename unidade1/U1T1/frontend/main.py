@@ -11,9 +11,9 @@ st.header("escolha o seu corpus")
 st.caption("esse corpus será pré-processado para gerar as palavras")
 #pdf = st.file_uploader("carregue seu corpus (apenas PDF)")
 livros = {
-    "Dom Casmurro": "../datasets/dom_casmurro.pdf",
-    "O Conde de Monte Cristo": "../datasets/o_conde_de_monte_cristo.pdf",
-    "O Pequeno Principe": "../datasets/pequeno_principe.pdf",
+    "Dom Casmurro": "./datasets/dom_casmurro.pdf",
+    "O Conde de Monte Cristo": "./datasets/o_conde_de_monte_cristo.pdf",
+    "O Pequeno Principe": "./datasets/pequeno_principe.pdf",
 }
 select_pdf = st.selectbox("escolha seu livro", livros)
 st.divider()
