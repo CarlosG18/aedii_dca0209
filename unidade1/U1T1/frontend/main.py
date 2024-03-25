@@ -28,5 +28,5 @@ prefix = st.text_input("insira o seu prefixo")
 prefix_on = st.button("obter palavras")
 
 if prefix_on:
-    lista_de_palavras = avl.autocomplete(prefix)
+    lista_de_palavras = avl.autocomplete(prefix.lower())
     st.write(lista_de_palavras)
