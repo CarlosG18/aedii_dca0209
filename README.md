@@ -11,7 +11,7 @@ Repositório dedicado a implementações e anotações sobre a disciplina de Alg
 
 - [📌 U1T2 - Tempo de complexidade dos Algoritimos](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade1/U1T2/u1t2.md)
 
-- [📌 U1T3 - desafio de implementações](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade1/U1T3/u1t3.md)
+- [📌 U1T3 - Desafio de implementações](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade1/U1T3/u1t3.md)
 
 ## 🚀 Unidade II
 
