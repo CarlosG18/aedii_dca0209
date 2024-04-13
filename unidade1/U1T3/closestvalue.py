@@ -1,48 +1,31 @@
 import pytest
 from binarysearchtree import *
 
-def size_tree(node):
-    """
-        função responsavel por calcular a quantidade de nos filhos dado um nó pai.
-
-        argumentos:
-            - node: nó pai que se deseja saber calcular quantos nós filhos possui
-
-        retorno:
-            - size: quantidade de nós filhos que o nó (node) possui
-    """
-    if node is None:
-       return 0
-
-    left_count  = size_tree(node.left_child) if node.left_child else 0
-    right_count  = size_tree(node.right_child) if node.right_child else 0
-
-    return 1 + left_count + right_count
-
 def search_element(vector, node, index_aux):
     """
         função que obtem um vetor com o nó desejado
 
         argumentos:
             - vector: vetor que armazenará o valor correto
-            - node: nó pai que começará a adição
-            - index_aux: variavel de auxilio para encontrar o valor correto
+            - node: nó raiz da arvore
+            - index_aux: vetor de auxilio para encontrar o valor correto
 
         retorno:
-            - index_aux: variavel de auxilio para encontrar o valor correto
-            - vector: vetor com o valor correto
+            - None
     """
+    if index_aux[0] < 0:
+        return
+                   
     if node.right_child is not None:
-        index_aux, vector = search_element(vector, node.right_child,index_aux)
-
-    index_aux -= 1
-    if index_aux == 0:
+        search_element(vector, node.right_child,index_aux)
+    
+    index_aux[0] = index_aux[0] - 1
+    if index_aux[0] == 0:
         vector.append(node.value)
+        return
     
     if node.left_child is not None:
-        index_aux, vector = search_element(vector, node.left_child, index_aux)
-
-    return index_aux, vector
+        search_element(vector, node.left_child, index_aux)
 
 def findKthLargestValue(tree, k):
     """
@@ -61,22 +44,9 @@ def findKthLargestValue(tree, k):
     int: The kth largest integer present in the BST.
     """
     vector = []
-    index_aux = k
-    
-    if tree.root.right_child is not None:
-        qtd_right_tree = size_tree(tree.root.right_child)
-    else: 
-        qtd_right_tree = 0
-    
-    if k > qtd_right_tree:
-        index_aux -= qtd_right_tree
-        if index_aux == 1:
-            return tree.root.value
-        else:
-            index_aux -= 1
-            _, vector = search_element(vector, tree.root.left_child, index_aux)
-    else:
-        _, vector = search_element(vector, tree.root.right_child, index_aux)
+    index_aux = [k]
+
+    search_element(vector, tree.root, index_aux)
 
     return vector[0]
 
