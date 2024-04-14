@@ -1,69 +1,52 @@
 import pytest
 from binarysearchtree import *
 
-def search_element(vector, node, index_aux):
+
+def findClosestValue(tree, target):
     """
-        função que obtem um vetor com o nó desejado
-
-        argumentos:
-            - vector: vetor que armazenará o valor correto
-            - node: nó raiz da arvore
-            - index_aux: vetor de auxilio para encontrar o valor correto
-
-        retorno:
-            - None
-    """
-    if index_aux[0] < 0:
-        return
-                   
-    if node.right_child is not None:
-        search_element(vector, node.right_child,index_aux)
-    
-    index_aux[0] = index_aux[0] - 1
-    if index_aux[0] == 0:
-        vector.append(node.value)
-        return
-    
-    if node.left_child is not None:
-        search_element(vector, node.left_child, index_aux)
-
-def findKthLargestValue(tree, k):
-    """
-    Finds the kth largest integer in a Binary Search Tree (BST).
-
-    The function traverses the BST in an in-order manner to collect the node values in a sorted list.
-    It then returns the kth largest value from this list. The BST is assumed to contain only integer values.
-    In case of duplicate integers, they are treated as distinct values.
-    The kth largest integer is determined in the context of these distinct values.
+    Finds the value in a binary search tree that is closest to the given target value.
 
     Parameters:
-    tree (BST): the Binary Search Tree (BST).
-    k (int): A positive integer representing the kth position.
+    tree (BST): The binary search tree object in which to find the closest value.
+                It is expected to have a 'root' attribute that points to the root node of the tree.
+    target (int): The target value for which the closest value in the binary search tree is sought.
 
     Returns:
-    int: The kth largest integer present in the BST.
+    int: The value in the binary search tree that is closest to the target value.
     """
-    vector = []
-    index_aux = [k]
 
-    search_element(vector, tree.root, index_aux)
+    # Iniciando a variável como nula
+    closest_value = None
 
-    return vector[0]
+    # Função auxiliar para percorrer recursivamente
+    def traverse(node):
+        nonlocal closest_value
+
+        # Caso base: se o nó atual analisado for nulo, retorne a função imediatamente
+        if node is None:
+            return
+
+        # Atualiza o valor mais próximo (na variável) caso seja necessário
+        if closest_value is None or abs(node.value - target) < abs(closest_value - target):
+            closest_value = node.value
+
+        # Continua a busca atravessando a árvore com base nas propriedades da BST
+        if target < node.value:
+            traverse(node.left_child)
+        elif target > node.value:
+            traverse(node.right_child)
+
+    # Inicia a busca/travessia a partir do nó raiz da árvore
+    traverse(tree.root)
+
+    return closest_value
 
 @pytest.fixture(scope="session")
 def data():
 
-    array = [[15,5,20,17,22,2,5,1,3],
-             [5,4,6,3,7],
-             [5],
-             [20,15,25,10,19,21,30,22],
-             [1,2,3,4,5],
-             [10,8,6,4,2],
-             [10,8,6,9,4,7,2,5,3],
-             [99727,99,727],
-             [15,5,20,17,22,24,23,25,2,5,1,3],
-             [15,5,20,17,22,2,5,1,3],
-             [15,5,20,17,22,2,5,1,3]
+    array = [[10, 5, 15, 13, 22, 14, 2, 5, 1],
+             [100,5,502,204,55000,1001,4500,203,205,207,
+              206,208,2,15,5,22,57,60,1,3,-51,1,1,1,1,1,-403]
              ]
     return array
 
@@ -71,64 +54,71 @@ def test_1(data):
     bst = BST()
     for value in data[0]:
       bst.add(value)
-    assert findKthLargestValue(bst, 3) == 17
+    assert findClosestValue(bst, 12) == 13
 
 def test_2(data):
     bst = BST()
     for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 1) == 7
+    assert findClosestValue(bst, 100) == 100
 
 def test_3(data):
     bst = BST()
-    for value in data[2]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 1) == 5
+    assert findClosestValue(bst, 208) == 208
 
 def test_4(data):
     bst = BST()
-    for value in data[3]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 3) == 22
+    assert findClosestValue(bst, 4500) == 4500
 
 def test_5(data):
     bst = BST()
-    for value in data[4]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 5) == 1
+    assert findClosestValue(bst, 4501) == 4500
 
 def test_6(data):
     bst = BST()
-    for value in data[5]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 2) == 8
+    assert findClosestValue(bst, -70) == -51
 
 def test_7(data):
     bst = BST()
-    for value in data[6]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 5) == 6
+    assert findClosestValue(bst, 2000) == 1001
 
 def test_8(data):
     bst = BST()
-    for value in data[7]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 1) == 99727
+    assert findClosestValue(bst, 6) == 5
 
 def test_9(data):
     bst = BST()
-    for value in data[8]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 7) == 15
+    assert findClosestValue(bst, 30000) == 55000
 
 def test_10(data):
     bst = BST()
-    for value in data[9]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 5) == 5
+    assert findClosestValue(bst, -1) == 1
 
 def test_11(data):
     bst = BST()
-    for value in data[10]:
+    for value in data[1]:
       bst.add(value)
-    assert findKthLargestValue(bst, 6) == 5
+    assert findClosestValue(bst, 29751) == 55000
+
+def test_12(data):
+    bst = BST()
+    for value in data[1]:
+      bst.add(value)
+    assert findClosestValue(bst, 29749) == 4500
+
