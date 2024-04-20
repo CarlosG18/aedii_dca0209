@@ -6,6 +6,8 @@ Repositório dedicado a implementações e anotações sobre a disciplina de Alg
 
 ## 🚀 Unidade I
 
+Na primeira unidade do curso, revisamos conceitos importantes como Árvores de Busca Binária (BST) e Árvores AVL, que foi assunto do curso anterior [Algoritmos e Estruturas de Dados I](https://github.com/CarlosG18/aedi_dca0208). Também desenvolvemos um trabalho sobre Processamento de Linguagem Natural (PNL) usando AVL, o que foi muito interessante. Além disso, aprendemos a estudar a complexidade de algoritmos, uma habilidade fundamental para avaliar o desempenho e a eficiência deles.
+
 ### 🎯 Atividades/projetos
 - [📌 U1T1 - Desafio: usando estrutura de dados em árvore com uma aplicação de Processamento de Linguagem Natural (PLN)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade1/U1T1/u1t1.md)
 
@@ -15,7 +17,13 @@ Repositório dedicado a implementações e anotações sobre a disciplina de Alg
 
 ## 🚀 Unidade II
 
+### 📚 Conteúdos
+
+- [🌐 Grafos (networks)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/conteudos/grafos.md)
+
 ### 🎯 Atividades/projetos
+
+- [📌 U2T1 - ]()
 
 ## 🚀 Unidade III
 
