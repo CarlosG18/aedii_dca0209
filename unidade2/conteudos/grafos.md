@@ -8,18 +8,18 @@
 
 Um grafo é uma estrutura de dados usada para modelar um conjunto de objetos, chamados de **vértices (ou nós)**, que estão conectados por meio de **arestas (ou links)**. Os **vértices** são representados por círculos, enquanto as **arestas** representam as relações entre os vértices e são representadas por linhas. Portanto, os vértices são os elementos individuais do grafo, e as arestas são as conexões entre esses elementos.. A imagem a seguir exemplifica um grafo:
 
-<center>
+<p align="center">
     <img width=400 src="../conteudos/imgs/grafo.png"/>
-</center>
+</p>
 
 ### 🔶 Formas de um grafo:
 
 Podemos também representar algumas caracteriscas do problema fazendo algumas modelagens visuais no grafo. Temos os grafos direcionados e os grafos ponderados. Os **grafos ponderados**, possuem pesos em seus links (representado pela espessura do link na imagem abaixo). Já os grafos direcionados, os links possuem direções (representados por setas). Podemos também combinar esses dois tipos de grafos dependendo da modelagem do nosso problema.
 
-<center>
+<p align="center">
     <img width=400 src="../conteudos/imgs/ponderado.png"/>
     <img width=400 src="../conteudos/imgs/direcionado.png"/>
-</center>
+</p>
 
 A imagem apresentada na esquerda mostra um grafo que ao mesmo tempo é ponderado e dirigido, enquanto a imagem da direita mostra um grafo apenas um grafo dirigido/direcionado.
 
@@ -29,9 +29,9 @@ A imagem apresentada na esquerda mostra um grafo que ao mesmo tempo é ponderado
 
 Uma rede bipartida é uma rede que possui dos grupos de objetos distintos mais que possuem alguma relação. É importante observar que neste tipo de rede, elementos do mesmo grupo não possuem qualquer relação. vamos analisar um exemplo prático para ficar mais claro:
 
-<center>
+<p align="center">
     <img width=400 src="../conteudos/imgs/rede_bipartida.png"/>
-</center>
+</p>
 
 Observando a rede acima, percebemos que o grupo **países** não possui qualquer relacionamento entre seus elementos. Da mesma forma, o grupo **produtos** também não se relaciona entre si. No entanto, notamos que o grupo "países" pode se relacionar com vários produtos, assim como os produtos podem se relacionar com vários países.
 
@@ -39,9 +39,9 @@ Observando a rede acima, percebemos que o grupo **países** não possui qualquer
 
 Em uma rede multicamada, cada tipo de relacionamento é representado por uma camada diferente. Cada camada mostra como os nós estão conectados de acordo com um tipo específico de interação ou relacionamento. podemos ver um exemplo de rede multicamada abaixo:
 
-<center>
+<p align="center">
     <img width=400 src="../conteudos/imgs/rede_multicamada.png"/>
-</center>
+</p>
 
 Temos um exemplo de interções em uma festa. Nela vemos que pessoas podem se relacionar de três formas (camadas), com interações visuais (olhares), interações verbais (conversas) e interações fisicas (aperto de maõs, abraços, etc). Perceba que para cada camada uma cor é usada para diferenciação entre os verticies.
 
@@ -49,11 +49,11 @@ Temos um exemplo de interções em uma festa. Nela vemos que pessoas podem se re
 
 Uma Rede Dinâmica é uma rede em que a forma como ela esta definida varia de acordo com o tempo. veja o exemplo abaixo para ficar mais claro:
 
-<center>
+<p align="center">
     <img width=300 src="../conteudos/imgs/rede_dinamica1.png"/>
     <img width=300 src="../conteudos/imgs/rede_dinamica2.png"/>
     <img width=300 src="../conteudos/imgs/rede_dinamica3.png"/>
-</center>
+</p>
 
 ## [3/4] 🔍 Propriedades de um Grafo
 
@@ -61,10 +61,10 @@ Uma Rede Dinâmica é uma rede em que a forma como ela esta definida varia de ac
 
 Uma rede é definida como completa quando todos os nós são conectados atraveś de links entre si:
 
-<center>
+<p align="center">
     <img width=300 src="../conteudos/imgs/rede_completa.png"/>
     <img width=300 src="../conteudos/imgs/rede_n_completa.png"/>
-</center>
+</p>
 
 ### 📌 Densidade
 
@@ -109,10 +109,10 @@ sendo:
 
 A definição de Grau está relacionada aos nós da rede. definimos grau como a quantidade arestas que esse nó possui. vamos ver um exemplo:
 
-<center>
+<p align="center">
     <img width=400 src="../conteudos/imgs/rede_graus.png"/>
     <img width=400 src="../conteudos/imgs/rede_graus_direcionado.png"/>
-</center>
+</p>
 
 Podemos observar a imagem a esquerda (rede sem direcionamento) que os graus de cada nó são dados pela constante **k**. Comparando com a imagem da direita (rede direcionada) podemos ver que o **k** se decomponhe em duas novas variaveis, o **Kin**, que representa todas as setas que estão entrado no nó, e o **kout**, que representa todas as setas que estão saindo do nó. O **grau médio** de uma rede é definido por:
 
@@ -136,9 +136,9 @@ Existem algumas formas de representar as rede, são elas:
 
 Vamos usar a rede que foi ultilizada para definir o grau:
 
-<center>
-    <img width=400 src="../conteudos/imgs/rede_graus_direcionado.png"/>
-</center>
+<p align="center">
+  <img width=400 src="../conteudos/imgs/rede_graus_direcionado.png"/>
+</p>
 
 podemos representa-lá pela seguinte matriz de adjacência:
 
@@ -190,6 +190,3 @@ Mas como foi feita essa matriz? bom para completar essa matriz, basta analisar n
 - **N1 -> N2**: já nessa situação, podemos ver que existe uma seta que sai do N1 para o nó N2. portanto completamos com 1.
 
 e deste modo fazemos a mesma analise para o restante do nó N1 e para os outros nós que faltam.
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
