@@ -21,6 +21,8 @@ Na primeira unidade do curso, revisamos conceitos importantes como Árvores de B
 
 - [🌐 Grafos (networks)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/conteudos/grafos.md)
 
+- [![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/praticas/[NetworkX]_Network_Elements.ipynb) - Iniciando com a lib **NetworkX**
+
 ### 🎯 Atividades/projetos
 
 - [📌 U2T1 - ]()

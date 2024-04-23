@@ -6,7 +6,7 @@
 
 ### ❔ O que é um grafo? 
 
-Um grafo é uma estrutura de dados usada para modelar um conjunto de objetos, chamados de **vértices (ou nós)**, que estão conectados por meio de **arestas (ou links)**. Os **vértices** são representados por círculos, enquanto as **arestas** representam as relações entre os vértices e são representadas por linhas. Portanto, os vértices são os elementos individuais do grafo, e as arestas são as conexões entre esses elementos.. A imagem a seguir exemplifica um grafo:
+Um grafo é uma estrutura de dados usada para modelar um conjunto de objetos, chamados de **vértices (ou nós)**, que estão conectados por meio de **arestas (ou links)**. Os **vértices** são representados por círculos, enquanto as **arestas** representam as relações entre os vértices e são representadas por linhas. Portanto, os vértices são os elementos individuais do grafo, e as arestas são as conexões entre esses elementos. A imagem a seguir exemplifica um grafo:
 
 <p align="center">
     <img width=400 src="../conteudos/imgs/grafo.png"/>
@@ -14,14 +14,14 @@ Um grafo é uma estrutura de dados usada para modelar um conjunto de objetos, ch
 
 ### 🔶 Formas de um grafo:
 
-Podemos também representar algumas caracteriscas do problema fazendo algumas modelagens visuais no grafo. Temos os grafos direcionados e os grafos ponderados. Os **grafos ponderados**, possuem pesos em seus links (representado pela espessura do link na imagem abaixo). Já os grafos direcionados, os links possuem direções (representados por setas). Podemos também combinar esses dois tipos de grafos dependendo da modelagem do nosso problema.
+Podemos também representar algumas caracteriscas do problema fazendo algumas modelagens visuais no grafo. Temos os grafos direcionados e os grafos ponderados. Os **grafos ponderados**, possuem pesos em seus links (representado pela espessura do link na imagem abaixo). Já os **grafos direcionados**, os links possuem direções (representados por setas). Podemos também combinar esses dois tipos de grafos dependendo da modelagem do nosso problema.
 
 <p align="center">
     <img width=400 src="../conteudos/imgs/ponderado.png"/>
     <img width=400 src="../conteudos/imgs/direcionado.png"/>
 </p>
 
-A imagem apresentada na esquerda mostra um grafo que ao mesmo tempo é ponderado e dirigido, enquanto a imagem da direita mostra um grafo apenas um grafo dirigido/direcionado.
+A imagem apresentada na esquerda mostra um grafo que ao mesmo tempo é ponderado e dirigido, enquanto a imagem da direita mostra um grafo que é apenas dirigido/direcionado.
 
 ## [2/4] 🔵 Tipos de Redes:
 
