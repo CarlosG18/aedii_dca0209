@@ -17,15 +17,19 @@ Na primeira unidade do curso, revisamos conceitos importantes como Árvores de B
 
 ## 🚀 Unidade II
 
+Na Unidade II, exploramos em profundidade a estrutura de dados **grafo**, essencial para representar e resolver problemas que envolvem relações complexas entre objetos. Estudamos os diversos tipos de grafos, como **grafos direcionados** e **não direcionados**, e as principais operações e algoritmos associados, como **busca em largura (BFS)** e busca em **profundidade (DFS)**. Além disso, mergulhamos na **teoria do mundo pequeno**, que descreve como, em muitas redes reais, a maioria dos nós pode ser alcançada a partir de qualquer outro nó em um pequeno número de passos. Esta teoria tem implicações significativas em áreas como redes sociais, biologia e ciência da computação, ilustrando a ubiquidade e importância dos grafos no mundo moderno.
+
 ### 📚 Conteúdos
 
 - [🌐 Grafos (networks)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/conteudos/grafos.md)
 
 - [![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/praticas/[NetworkX]_Network_Elements.ipynb) - Iniciando com a lib **NetworkX**
 
+- [🧠 Teoria do Mundo Pequeno & Conceitos](./unidade2/conteudos/small_world.md)
+
 ### 🎯 Atividades/projetos
 
-- [📌 U2T1 - ]()
+- [📌 U2T1 - Investigando redes de co-autoria e ODS-ONU](./unidade2/U2T1/u2t1.md)
 
 ## 🚀 Unidade III
 
