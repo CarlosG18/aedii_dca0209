@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / pacotes
+build/
+dist/
+*.egg-info/
+
+# Diretórios de ambiente virtual
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+.conda/
+conda/
+
+# Arquivos do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Editor de configuração
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
