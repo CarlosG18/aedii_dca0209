@@ -1,5 +1,8 @@
 # Tabela com metricas dos grafos estudados
 
+⬅️ [Readme principal](../u2t1.md)
+⬅️ [Readme tabela](./tabela.md)
+
 ```python
 !pip install networkx
 !pip install pandas

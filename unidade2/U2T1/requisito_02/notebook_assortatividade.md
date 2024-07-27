@@ -1,5 +1,7 @@
 # Estudo da Assortatividade dos grafos de co-autoria da URFN relacionados as ODS
 
+⬅️ [Readme principal](../u2t1.md)
+⬅️ [Readme Assortatividade](./assortatividade.md)
 
 ```python
 !pip install networkx
