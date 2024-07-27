@@ -6,6 +6,8 @@
 
 [![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/U2T1/requisito_03/tabela.ipynb) - Notebook com os códigos sobre as metricas de cada grafo.
 
+[acesse esse link caso o notebook não carregue](https://nbviewer.org/github/CarlosG18/aedii_dca0209/blob/main/unidade2/U2T1/requisito_03/tabela.ipynb)
+
 ## 📈 Tabela com as metricas dos grafos
 
 | Rede   | Qtd Vértices | Qtd Arestas | Degree Assortativity Coefficient | Qtd Comp. Conectados | Tamanho do Comp. Gigante (GCC) | Coef. de Clustering avg_clustering() |
