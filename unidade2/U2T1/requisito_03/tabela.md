@@ -4,7 +4,7 @@
 
 ⬅️ [Readme principal](../u2t1.md)
 
-[![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](../requisito_02/assortatividade.ipynb) - Notebook com os códigos sobre as metricas de cada grafo.
+[![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](./tabela.ipynb) - Notebook com os códigos sobre as metricas de cada grafo.
 
 ## 📈 Tabela com as metricas dos grafos
 
