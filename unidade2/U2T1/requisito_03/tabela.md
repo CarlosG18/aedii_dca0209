@@ -17,4 +17,33 @@ Acesse esse [🔗 link](./notebook_tabela.md) se a visulização do notebook nã
 | ODS  9 |    1825      |    6119     |         0.079773                 |         184          |            404                  |                 0.910081              |
 | ODS 11 |    2095      |    39679    |         0.997434                 |         206          |            247                  |                 0.911539              |
 
-**texto sobre interpretação dos resultados**
+# Análise das Redes de Colaboração nos ODS
+
+A análise da tabela com as métricas dos grafos revela informações importantes sobre a estrutura de colaboração entre os pesquisadores nessas áreas das ODS. A análise será feita item por item para que o entendimento seja breve e direto.
+
+## Quantidade de Vértices e Arestas
+
+O número de vértices representa o número de autores na rede, enquanto o número de arestas representa as coautorias ou colaborações entre eles. Redes com mais vértices e arestas indicam uma comunidade maior e mais colaborativa. Dessa forma, ao verificar a densidade das conexões, percebe-se que as redes de ODS 2 e ODS 11 são as mais densamente conectadas, com números elevados de vértices e arestas, indicando uma colaboração extensa e ativa. ODS 2, em particular, apresenta 1869 vértices e 45126 arestas, refletindo um alto grau de interação entre pesquisadores.
+
+## Coeficiente de Assortatividade de Grau
+
+O coeficiente de assortatividade de grau é uma métrica que indica se autores com números semelhantes de coautorias tendem a colaborar entre si. Valores próximos de 1, como os encontrados nas redes de ODS 2 (0.988612) e ODS 11 (0.997434), mostram uma forte assortatividade positiva, sugerindo que autores altamente produtivos preferem colaborar com outros igualmente produtivos. Por outro lado, ODS 9, com um coeficiente de 0.079773, demonstra pouca preferência, indicando uma mistura mais diversa de colaborações.
+
+## Quantidade de Componentes Conectados e Tamanho do Componente Gigante (GCC)
+
+Ambos fornecem uma visão sobre a fragmentação da rede. Sendo assim, ODS 2 possui um GCC de 1052, o maior entre as redes analisadas, indicando uma grande coesão entre os pesquisadores. Em contraste, ODS 1 tem um GCC de apenas 54, sugerindo uma maior fragmentação e menos coesão. ODS 9 e ODS 11 têm valores intermediários, com o GCC de ODS 9 sendo 404 e o de ODS 11 sendo 247.
+
+## Coeficiente de Clustering
+
+O coeficiente de clustering médio indica a tendência dos pesquisadores de formarem grupos fechados de colaboração. Todas as redes apresentam altos valores de clustering, com ODS 2 liderando com 0.945777. Isso significa que é altamente provável que os coautores de um autor também colaborem entre si, formando subgrupos coesos.
+
+## Conclusão
+
+De forma geral, chega-se a conclusão de que a análise revela que as redes de ODS 2 e ODS 11 são as mais interconectadas e coesas, com fortes preferências por colaborações entre pesquisadores produtivos, refletindo uma comunidade científica unida e ativa. ODS 1 mostra uma rede mais dispersa e fragmentada, sugerindo menos interações intensivas entre pesquisadores. Já ODS 9, com sua baixa assortatividade, demonstra uma rede onde a colaboração é mais aleatória, sem uma forte tendência de conexão entre pesquisadores com graus semelhantes.
+
+---
+
+
+
+
+
