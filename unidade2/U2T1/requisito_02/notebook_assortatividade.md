@@ -1,23 +1,27 @@
 # Estudo da Assortatividade dos grafos de co-autoria da URFN relacionados as ODS
 
-⬅️ [Readme principal](../u2t1.md)
-
-⬅️ [Readme Assortatividade](./assortatividade.md)
 
 ```python
 !pip install networkx
 !pip install pandas
 !pip install matplotlib
 !pip install seaborn
+!pip install scipy
 ```
 
     Requirement already satisfied: networkx in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (3.3)
+    
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m24.1.2[0m
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
     Requirement already satisfied: pandas in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (2.2.2)
     Requirement already satisfied: numpy>=1.26.0 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from pandas) (2.0.1)
     Requirement already satisfied: python-dateutil>=2.8.2 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from pandas) (2.9.0.post0)
     Requirement already satisfied: pytz>=2020.1 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from pandas) (2024.1)
     Requirement already satisfied: tzdata>=2022.7 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from pandas) (2024.1)
     Requirement already satisfied: six>=1.5 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+    
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m24.1.2[0m
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
     Requirement already satisfied: matplotlib in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (3.9.1)
     Requirement already satisfied: contourpy>=1.0.1 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from matplotlib) (1.2.1)
     Requirement already satisfied: cycler>=0.10 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from matplotlib) (0.12.1)
@@ -29,6 +33,9 @@
     Requirement already satisfied: pyparsing>=2.3.1 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from matplotlib) (3.1.2)
     Requirement already satisfied: python-dateutil>=2.7 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from matplotlib) (2.9.0.post0)
     Requirement already satisfied: six>=1.5 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+    
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m24.1.2[0m
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
     Requirement already satisfied: seaborn in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (0.13.2)
     Requirement already satisfied: numpy!=1.24.0,>=1.20 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from seaborn) (2.0.1)
     Requirement already satisfied: pandas>=1.2 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from seaborn) (2.2.2)
@@ -44,6 +51,18 @@
     Requirement already satisfied: pytz>=2020.1 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2024.1)
     Requirement already satisfied: tzdata>=2022.7 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2024.1)
     Requirement already satisfied: six>=1.5 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.4->seaborn) (1.16.0)
+    
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m24.1.2[0m
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
+    Collecting scipy
+      Using cached scipy-1.14.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+    Requirement already satisfied: numpy<2.3,>=1.23.5 in /home/eduardo09/gabriel/ufrn/semestres/2024.1/aed2/aedii_dca0209/venv/lib/python3.12/site-packages (from scipy) (2.0.1)
+    Using cached scipy-1.14.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (40.8 MB)
+    Installing collected packages: scipy
+    Successfully installed scipy-1.14.0
+    
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m24.1.2[0m
+    [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
 
 
 
@@ -52,6 +71,7 @@ import networkx as nx
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import scipy
 ```
 
 
@@ -226,6 +246,7 @@ plot_graph(ods2_graph, titulo="Grafo ODS 2")
 data_frame9 = pd.read_csv('../datasets/ods_9.csv')
 
 # criando o grafo da ods_1
+
 ods9_graph = create_graph(data_frame9)
         
 # metricas do grafo

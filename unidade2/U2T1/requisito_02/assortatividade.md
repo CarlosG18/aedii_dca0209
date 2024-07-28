@@ -14,4 +14,12 @@ Acesse esse [🔗 link](./notebook_assortatividade.md) se a visulização do not
     <img width=1000 src="../imgs/graficos_bipartidos.png"/>
 </p>
 
-**texto sobre interpretação dos resultados**
+Analisando os gráficos da imagem acima, podemos levantar algumas conclusões sobre os autores dos artigos relacionados a cada ODS. mas antes disso vamos definir algumas metricas importantes:
+
+O valor da assortatividade pode esta entre o intervalo de [-1, 1], sendo valores negativos atribuidos para a desassortatividade, que se define como a tendência de um nó da rede se relacionar com nós de graus diferentes do seu. Já valores positivos para a assortatividade, temos que um nó tendem a se relacionar com outros nós de graus semelhantes ao seu.
+
+Diante disso, podemos fazer uma interpretação para o estudo feito:
+
+- **ODS 1, 2 e 11**: Nessas ODS`s o grau de assortatividade é alta, o que implica que autores com um alto grau de relevância, tende a realizar trabalhos com outros pesquisadores de alta relevância. isso pode ser observado nos gráficos, onde a linha de tendência possui uma inclinação maior em relação a ODS 9, que possui um baixo grau de assortatividade. Podemos observar também a dispersão dos dados nos 3 gráficos, ao qual podemos ver uma incidência maior de elementos em torno da linha de tendência, isso está coerente já que o grau de assortatividade é alto, o número de autores que possuem graus proximos devem ser a maioria.
+
+- **ODS 9**: Já nessa ODS, podemos observar um grau de assortatividade bastante baixo, onde os autores tendem a se relacionar mais com autores que possuiem graus de relevância diferentes do seu. Na disperção dos dados, podemos ver que há uma grande incidência de nós que estão associados com nós de graus diferentes do seu, estanddo fora da região delimitada pela linha de tendência.
