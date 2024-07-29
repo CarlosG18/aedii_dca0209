@@ -6,8 +6,6 @@
 
 [![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/U2T1/requisito_02/notebook_assortatividade.ipynb) - Notebook com os códigos sobre os grafos.
 
-Acesse esse [🔗 link](./notebook_assortatividade.md) se a visulização do notebook não estiver carregando.
-
 ## 🔄 Assortatividade
 
 <p align="center">
