@@ -1,6 +1,6 @@
 # Obtendo o dataset das ODS
 
-> passo a passo de como foi obtido os datasets das ODS, usando a plataforma SCOPUS
+> passo a passo de como foi obtido os datasets dos artigos relacionados as ODS, usando a plataforma SCOPUS
 
 ⬅️ [Readme principal](../u2t1.md)
 
@@ -10,7 +10,7 @@ Os passos densenvolvidos para se obter o dataset é padrão para cada ODS, onde 
 
 ## [1/4] 🔶 Passo 1 - Obtendo a query respectivo a ODS escolhido
 
-Para fazermos um **"filtro"** de apenas os artigos que referênciam uma ODS especifica precisamos obter uma query disponivel [aqui](https://elsevier.digitalcommonsdata.com/datasets/y2zyy9vwzy/1). Ao acessar esse link, voce deverá ir na pasta `SDG 2023 QUERIES` e copiar a query da ODS desejada.
+Para fazermos um **"filtro"** de apenas os artigos que referênciam uma ODS específica precisamos obter uma query disponível [aqui](https://elsevier.digitalcommonsdata.com/datasets/y2zyy9vwzy/1). Ao acessar esse link, voce deverá ir na pasta `SDG 2023 QUERIES` e copiar a query da ODS desejada.
 
 ## [2/4] 🔶 Passo 2 - Acessando o site do SCOPUS
 
