@@ -25,12 +25,20 @@ Na Unidade II, exploramos em profundidade a estrutura de dados **grafo**, essenc
 
 - [![Jupyter](https://img.shields.io/badge/-Notebook-191A1B?style=flat-square&logo=jupyter)](https://github.com/CarlosG18/aedii_dca0209/blob/main/unidade2/praticas/[NetworkX]_Network_Elements.ipynb) - Iniciando com a lib **NetworkX**
 
-- [🧠 Teoria do Mundo Pequeno & Conceitos](./unidade2/conteudos/small_world.md)
-
 ### 🎯 Atividades/projetos
 
 - [📌 U2T1 - Investigando redes de co-autoria e ODS-ONU](./unidade2/U2T1/u2t1.md)
 
 ## 🚀 Unidade III
 
+Na Unidade 3, aprofundamos nosso estudo sobre o conceito de **"Small World"** com foco em diversos aspectos como caminhos **(paths)**, distâncias **(distances)**, componentes conectados **(connected components)**, coeficiente de agrupamento **(clustering coefficient)**, distância social **(social distance)** e os famosos **"Seis Graus de Separação"**. Exploramos como esses conceitos se manifestam em diferentes redes e a importância deles para a análise de grafos. Estudamos também os **"Hubs"**, que são métricas essenciais e analisamos estudos de caso relevantes. Exploramos métricas importantes como excentricidade **(Eccentricity)**, diâmetro **(Diameter)**, periferia **(Periphery)**, raio **(Radius)** e centro **(Center)** de um grafo. Também abordamos centralidades como grau **(Degree)**, proximidade **(Closeness)**, intermediação **(Betweenness)** e centralidade de vetor próprio **(Eigenvector Centrality)**, além de discutir as distribuições de centralidade **(Centrality Distributions)** e o conceito de decomposição em camadas **(Core Decomposition)**.
+
+Essa unidade proporcionou uma compreensão aprofundada das métricas e métodos de análise de redes, essenciais para a interpretação e utilização prática de grandes conjuntos de dados interconectados.
+
+### 📚 Conteúdos
+
+- [🧠 Teoria do Mundo Pequeno & Conceitos](./unidade2/conteudos/small_world.md)
+
 ### 🎯 Atividades/projetos
+
+- [📌 U3T1 - Trabalho Final](./unidade3/U3T1/u3t1.md)
