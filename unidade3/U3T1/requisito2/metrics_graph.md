@@ -9,13 +9,13 @@ Apos importar os dados do grafo no formato **graphml** para o gephi, foi aplicad
 ## 🔶 Degree Centrality, Closeness Centrality, Betweenness Centrality e Eigenvector Centrality
 
 <p align="center">
-    <img width=700 src="./imgs/degree_centrality/degree.svg"/>
-    <img width=700 src="./imgs/closeness_centrality/closeness.svg"/>
+    <img width=500 src="./imgs/degree_centrality/degree.svg"/>
+    <img width=500 src="./imgs/closeness_centrality/closeness.svg"/>
 </p>
 
 <p align="center">
-    <img width=700 src="./imgs/betweenness_centrality/betweenness.svg"/>
-    <img width=700 src="./imgs/eigenvector_centrality/eigenvector.svg"/>
+    <img width=500 src="./imgs/betweenness_centrality/betweenness.svg"/>
+    <img width=500 src="./imgs/eigenvector_centrality/eigenvector.svg"/>
 </p>
 
 filtros aplicados (seção **filters**: `Library/Attributes/Range/`) nas métricas para ser possivel observar alguns nós individualmente:
