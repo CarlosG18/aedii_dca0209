@@ -4,7 +4,7 @@
 
 ## 🛠️ Usando o Gephi
 
-Apos importar os dados do grafo no formato **graphml** para o gephi, foi aplicado o **layout**: ``ForceAtlas2``. Foi ativada a opção ``dissuade hubs`` para melhorar a visualização, já que existiam hubs que estavam sobrepondo outros. Na aba **Metrics** foi possivel calcular as seguintes métricas:
+Após importar os dados do grafo no formato **graphml** para o gephi, foi aplicado o **layout**: ``ForceAtlas2``. Foi ativada a opção ``dissuade hubs`` para melhorar a visualização, já que existiam hubs que estavam sobrepondo uns aos outros. Na aba **Metrics** foi possivel calcular as seguintes métricas:
 
 ## 🔶 Degree Centrality, Closeness Centrality, Betweenness Centrality e Eigenvector Centrality
 

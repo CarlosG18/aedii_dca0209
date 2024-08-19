@@ -4,7 +4,7 @@
 
 ## 🔶 In-Degree
 
-Basicamente como o grafo obtido pelo estudo é um grafo direcionado, ele possui tanto o **in-degree**, que está ligado ao número de páginas que citam aquela página em especifico e o **out-degree** que são as páginas que que uma determinada página cita. vamos estudar mais profundamente a métrica do Indegree por ser mais relevante para o estudo.
+Basicamente como o grafo obtido pelo estudo é um grafo direcionado, ele possui tanto o **in-degree**, que está ligado ao número de páginas que citam aquela página em especifico e o **out-degree** que são as páginas que uma determinada página cita. vamos estudar mais profundamente a métrica do Indegree por ser mais relevante para o estudo.
 
 <p align="center">
     <img width=500 src="./imgs/probability_density_function.png"/>
