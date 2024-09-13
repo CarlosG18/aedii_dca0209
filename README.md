@@ -35,10 +35,6 @@ Na Unidade 3, aprofundamos nosso estudo sobre o conceito de **"Small World"** co
 
 Essa unidade proporcionou uma compreensão aprofundada das métricas e métodos de análise de redes, essenciais para a interpretação e utilização prática de grandes conjuntos de dados interconectados.
 
-### 📚 Conteúdos
-
-- [🧠 Teoria do Mundo Pequeno & Conceitos](./unidade2/conteudos/small_world.md)
-
 ### 🎯 Atividades/projetos
 
 - [📌 U3T1 - Trabalho Final](./unidade3/U3T1/u3t1.md)
